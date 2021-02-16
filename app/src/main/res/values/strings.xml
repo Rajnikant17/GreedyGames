@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">greedygamesproject</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="artist">Artist :</string>
+    <string name="description">Description</string>
+    <string name="title">Title :</string>
+    <string name="like_count">Like count :</string>
+    <string name="followers">Followers :</string>
+    <string name="genre">Genre</string>
+    <string name="top_tracks">Top Tracks</string>
+    <string name="top_albums">Top Albums</string>
+    <string name="view_all">View all</string>
+    <string name="view_less">View less</string>
+</resources>

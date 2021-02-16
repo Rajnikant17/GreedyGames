@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="artistData"
+            type="com.example.moduleforapiservices.models.Artist" />
+    </data>
+
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="220dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="20dp"
+    android:layout_marginStart="10dp"
+    android:id="@+id/ll_artistparent"
+    >
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_artist"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_title"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="@{artistData.name}"
+        />
+</androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

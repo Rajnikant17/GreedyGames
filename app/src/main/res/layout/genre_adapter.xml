@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="genreData"
+            type="com.example.moduleforapiservices.models.GenreTag" />
+    </data>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="7dp"
+    android:layout_marginBottom="7dp"
+    >
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_genre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:paddingHorizontal="10dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:background="@drawable/genre_background"
+        android:textColor="@color/black"
+        android:text="@{genreData.name}"
+        />
+</RelativeLayout>
+</layout>

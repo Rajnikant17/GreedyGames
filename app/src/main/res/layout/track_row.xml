@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="trackData"
+            type="com.example.moduleforapiservices.models.Track" />
+    </data>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="220dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp"
+    android:layout_marginStart="10dp"
+    >
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_track"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_title"
+            android:textSize="18sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:text="@{trackData.name}"
+            />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_artist"
+            android:textSize="15sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_marginTop="5dp"
+            android:text="@{trackData.artist.name}"
+
+            />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
+</layout>
